@@ -1,9 +1,9 @@
 FROM node:16.14.2 as build
 
 WORKDIR /app
-COPY package*.json .
+COPY package*.json ./
 RUN npm install
-COPY . .
+COPY . ./
 #RUN npm install -g @angular-devkit/build-angular@13.3.0
 #RUN npm install -g @angular/cli@13.1.2
 #RUN npm install -g @angular/compiler-cli@13.1.0
